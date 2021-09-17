@@ -44,6 +44,9 @@ int main()
     printArray(array, array_size);
 
     bubbleSort(array, array_size);
+
+    printf("\nSorted array: ");
     printArray(array, array_size);
 
+    return 0;
 }
