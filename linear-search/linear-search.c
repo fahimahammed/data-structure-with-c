@@ -1,5 +1,6 @@
 #include<stdio.h>
 
+// search function...
 void search(int Array[], int array_size, int search_num)
 {
     int i;
@@ -14,6 +15,8 @@ void search(int Array[], int array_size, int search_num)
     }
 }
 
+
+// print array function...
 void printArray(int array[], int array_size)
 {
     int i;
