@@ -1,5 +1,6 @@
 #include<stdio.h>
 
+// function of swap...
 void swap(int *l, int *r)
 {
     int temp;
@@ -8,6 +9,7 @@ void swap(int *l, int *r)
     *r = temp;
 }
 
+// function of sort
 void bubbleSort(int array[], int size)
 {
     int i, j;
@@ -20,6 +22,7 @@ void bubbleSort(int array[], int size)
 
 }
 
+// function of print array...
 void printArray(int array[], int size)
 {
     int i;
@@ -29,6 +32,8 @@ void printArray(int array[], int size)
     printf("\n");
 }
 
+
+// Driver code...
 int main()
 {
     int array[100], array_size;
