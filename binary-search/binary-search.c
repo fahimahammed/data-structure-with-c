@@ -1,6 +1,7 @@
 //Binary search
 #include<stdio.h>
 
+// function of binary search...
 void binarySort(int array[], int n, int search_num)
 {
     int first, last, mid;
@@ -27,6 +28,7 @@ void binarySort(int array[], int n, int search_num)
     }
 }
 
+// function of print array...
 void printArray(int array[], int array_size)
 {
     int i;
@@ -36,6 +38,8 @@ void printArray(int array[], int array_size)
     printf("\n");
 }
 
+
+//Driver code...
 int main()
 {
     int array[100], n, i, search_num;
