@@ -1,20 +1,9 @@
 //Binary search
 #include<stdio.h>
 
-int main()
+void binarySort(int array[], int n, int search_num)
 {
-    int array[100], n, i, search_num, first, last, mid;
-
-    printf("Enter the array size: ");
-    scanf("%d", &n);
-
-    printf("\nEnter the elements of array: ");
-    for(i=0; i<n; i++){
-        scanf("%d", &array[i]);
-    }
-
-    printf("\nEnter a number to search: ");
-    scanf("%d", &search_num);
+    int first, last, mid;
 
     first = 0;
     last = n-1;
@@ -33,9 +22,40 @@ int main()
         }
         mid = (first + last)/2;
     }
-    printf("%d %d", first, last);
     if(first > last){
         printf("\n%d is not found\n", search_num);
     }
+}
+
+void printArray(int array[], int array_size)
+{
+    int i;
+    for(i=0; i<array_size; i++){
+        printf("%d ", array[i]);
+    }
+    printf("\n");
+}
+
+int main()
+{
+    int array[100], n, i, search_num;
+
+    printf("Enter the array size: ");
+    scanf("%d", &n);
+
+    printf("\nEnter the elements of array: ");
+    for(i=0; i<n; i++){
+        scanf("%d", &array[i]);
+    }
+
+
+    printf("\nEnter a number to search: ");
+    scanf("%d", &search_num);
+
+    printf("\nGiven array: ");
+    printArray(array, n);
+
+    binarySort(array, n,search_num);
+
     return 0;
 }
