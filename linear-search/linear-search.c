@@ -1,4 +1,28 @@
 #include<stdio.h>
+
+void search(int Array[], int array_size, int search_num)
+{
+    int i;
+    for(i=0; i<array_size; i++){
+        if(Array[i] == search_num){
+            printf("\n%d is found at index %d\n", search_num, i);
+            break;
+        }
+    }
+    if(array_size==i){
+        printf("\n%d is not found\n", search_num);
+    }
+}
+
+void printArray(int array[], int array_size)
+{
+    int i;
+    for(i = 0; i<array_size; i++){
+        printf("%d ", array[i]);
+    }
+    printf("\n");
+}
+
 int main()
 {
     int Array[100], n, search_num, i;
@@ -13,14 +37,9 @@ int main()
     printf("\nEnter a number for search: ");
     scanf("%d", &search_num);
 
-    for(i=0; i<n; i++){
-        if(Array[i] == search_num){
-            printf("\n%d is found at index %d", search_num, i);
-            break;
-        }
-    }
-    if(n==i){
-        printf("\n%d is not found", search_num);
-    }
+    printf("\nGiven array: ");
+    printArray(Array, n);
+
+    search(Array, n, search_num);
     return 0;
 }
