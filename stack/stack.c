@@ -52,6 +52,7 @@ int peek()
     }
 }
 
+// Print options
 void options()
 {
     printf("\nChoose Option\n");
