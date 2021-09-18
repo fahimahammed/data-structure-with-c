@@ -1,3 +1,5 @@
+// Stack
+// @faf
 #include<stdio.h>
 
 #define CAPACITY 5
