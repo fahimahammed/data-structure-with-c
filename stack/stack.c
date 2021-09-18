@@ -1,8 +1,6 @@
 #include<stdio.h>
 
-//#define CAPACITY 5
-int CAPACITY;
-scanf("%d", &CAPACITY);
+#define CAPACITY 5
 int stack[CAPACITY];
 int index = -1;
 
@@ -51,6 +49,7 @@ void options()
 }
 int main()
 {
+    printf("Stack capacity: %d", CAPACITY);
     while(1){
         int n, value;
         options();
