@@ -1,6 +1,8 @@
 #include<stdio.h>
 
-#define CAPACITY 5
+//#define CAPACITY 5
+int CAPACITY;
+scanf("%d", &CAPACITY);
 int stack[CAPACITY];
 int index = -1;
 
@@ -34,22 +36,42 @@ int peek()
     if(index >= 0){
         printf("Peek: %d\n", stack[index]);
     }
-    else("Empty Stack\n");
+    else{
+        printf("Empty Stack\n");
+    }
+}
+
+void options()
+{
+    printf("\nChoose Option\n");
+    printf("1. Push\n");
+    printf("2. Pop\n");
+    printf("3. Peek\n");
+    printf("0. Exit\n");
 }
 int main()
 {
-    push(10);
-    peek();
-    push(20);
-    push(10);
-    push(20);
-    push(30);
-    push(40);
-    push(50);
-    push(60);
-    peek();
-    pop();
-    pop();
-    peek();
+    while(1){
+        int n, value;
+        options();
+        scanf("%d", &n);
+        if(n == 0){
+            break;
+        }
+        else if(n == 1){
+            printf("\nEnter a number to PUSH: ");
+            scanf("%d", &value);
+            push(value);
+        }
+        else if(n == 2){
+            pop();
+        }
+        else if(n == 3){
+            peek();
+        }
+        else{
+            printf("\nWrong input\n");
+        }
+    }
     return 0;
 }
