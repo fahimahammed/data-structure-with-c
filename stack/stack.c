@@ -21,7 +21,7 @@ int push(int n)
     }
 }
 
-// pop
+// pop operation
 int pop()
 {
     if(index >= 0){
