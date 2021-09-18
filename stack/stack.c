@@ -4,7 +4,7 @@
 int stack[CAPACITY];
 int index = -1;
 
-// push
+// push operation
 int push(int n)
 {
     if(index < CAPACITY - 1){
