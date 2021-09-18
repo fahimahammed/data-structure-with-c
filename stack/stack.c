@@ -62,7 +62,7 @@ void options()
     printf("\t0. Exit\n");
 }
 
-
+// Driver code..
 int main()
 {
     printf("Stack capacity: %d\n", CAPACITY);
