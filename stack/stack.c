@@ -10,10 +10,14 @@ int push(int n)
     if(index < CAPACITY - 1){
         index = index + 1;
         stack[index] = n;
+        printf("\n--------------------------------\n");
         printf("Successfully added item: %d\n", stack[index]);
+        printf("\n--------------------------------\n");
     }
     else{
+        printf("\n--------------------------------\n");
         printf("Stack Overflow..\n");
+        printf("\n--------------------------------\n");
     }
 }
 
@@ -21,21 +25,29 @@ int push(int n)
 int pop()
 {
     if(index >= 0){
+        printf("\n--------------------------------\n");
         printf("Pop item: %d\n", stack[index]);
+        printf("\n--------------------------------\n");
         index = index - 1;
     }
     else{
+        printf("\n--------------------------------\n");
         printf("Empty Stack\n");
+        printf("\n--------------------------------\n");
     }
 }
 
 int peek()
 {
     if(index >= 0){
+        printf("\n--------------------------------\n");
         printf("Peek: %d\n", stack[index]);
+        printf("\n--------------------------------\n");
     }
     else{
+        printf("\n--------------------------------\n");
         printf("Empty Stack\n");
+        printf("\n--------------------------------\n");
     }
 }
 
@@ -47,12 +59,16 @@ void options()
     printf("3. Peek\n");
     printf("0. Exit\n");
 }
+
+
 int main()
 {
-    printf("Stack capacity: %d", CAPACITY);
+    printf("Stack capacity: %d\n", CAPACITY);
+    printf("--------------------------------");
     while(1){
         int n, value;
         options();
+        printf("Enter your choice option num: ");
         scanf("%d", &n);
         if(n == 0){
             break;
@@ -69,7 +85,9 @@ int main()
             peek();
         }
         else{
+            printf("\n--------------------------------\n");
             printf("\nWrong input\n");
+            printf("\n--------------------------------\n");
         }
     }
     return 0;
