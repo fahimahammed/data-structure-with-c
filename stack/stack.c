@@ -37,6 +37,7 @@ int pop()
     }
 }
 
+// peek operation
 int peek()
 {
     if(index >= 0){
