@@ -11,12 +11,12 @@ int push(int n)
         index = index + 1;
         stack[index] = n;
         printf("\n--------------------------------\n");
-        printf("Successfully added item: %d\n", stack[index]);
+        printf("Successfully added item: %d", stack[index]);
         printf("\n--------------------------------\n");
     }
     else{
         printf("\n--------------------------------\n");
-        printf("Stack Overflow..\n");
+        printf("Stack Overflow..");
         printf("\n--------------------------------\n");
     }
 }
@@ -26,13 +26,13 @@ int pop()
 {
     if(index >= 0){
         printf("\n--------------------------------\n");
-        printf("Pop item: %d\n", stack[index]);
+        printf("Pop item: %d", stack[index]);
         printf("\n--------------------------------\n");
         index = index - 1;
     }
     else{
         printf("\n--------------------------------\n");
-        printf("Empty Stack\n");
+        printf("Empty Stack");
         printf("\n--------------------------------\n");
     }
 }
@@ -41,12 +41,12 @@ int peek()
 {
     if(index >= 0){
         printf("\n--------------------------------\n");
-        printf("Peek: %d\n", stack[index]);
+        printf("Peek: %d", stack[index]);
         printf("\n--------------------------------\n");
     }
     else{
         printf("\n--------------------------------\n");
-        printf("Empty Stack\n");
+        printf("Empty Stack");
         printf("\n--------------------------------\n");
     }
 }
@@ -54,10 +54,10 @@ int peek()
 void options()
 {
     printf("\nChoose Option\n");
-    printf("1. Push\n");
-    printf("2. Pop\n");
-    printf("3. Peek\n");
-    printf("0. Exit\n");
+    printf("\t1. Push\n");
+    printf("\t2. Pop\n");
+    printf("\t3. Peek\n");
+    printf("\t0. Exit\n");
 }
 
 
@@ -86,7 +86,7 @@ int main()
         }
         else{
             printf("\n--------------------------------\n");
-            printf("\nWrong input\n");
+            printf("\nWrong input.");
             printf("\n--------------------------------\n");
         }
     }
